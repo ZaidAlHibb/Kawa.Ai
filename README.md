@@ -31,7 +31,7 @@ Untuk SD sampai SMA/SMK, termasuk siswa dengan disleksia, ADHD, dan autisme.
 
 ---
 
-## Kenapa Kawa.Ai dibuat
+## Kenapa Kawa.Ai dibuat?
 
 Sekarang banyak kegiatan belajar sudah memakai AI sebagai teman belajar. Tapi dari banyak AI yang kami coba, sulit sekali menemukan yang benar-benar cocok untuk siswa yang kesulitan belajar. Biasanya kalau mau menyesuaikan karakter AI, kita harus menulis sendiri secara manual lewat teks. Selain itu, hampir tidak ada tampilan atau tema yang dibuat untuk anak yang kesulitan memakainya.
 
@@ -41,19 +41,19 @@ Padahal cara belajar tiap anak berbeda:
 - Anak ADHD gampang hilang fokus kalau jawabannya panjang.
 - Anak autisme biasanya lebih nyaman dengan bahasa yang apa adanya dan susunan yang selalu sama.
 
-Karena itu kami membuat Kawa.Ai. Tampilan dan cara AI menjawab ikut menyesuaikan profil siswa, dan karakter AI bisa dipilih langsung tanpa harus menulis manual. Dengan begitu siswa jadi lebih nyaman memakai AI, dan penjelasan yang sama bisa dipahami lebih banyak anak.
+Karena itu kami membuat Kawa.Ai. Tampilan dan cara AI menjawab ikut menyesuaikan profil siswa. Dengan begitu siswa jadi lebih nyaman memakai AI, dan penjelasan yang sama bisa dipahami lebih banyak anak.
 
-Kawa.Ai dibuat untuk **belajar**, bukan untuk memberi jawaban. Untuk PR, Kawa membantu siswa memahami langkahnya dulu, tidak langsung memberi jawaban akhir.
+dan Kawa.Ai dibuat untuk **belajar**, bukan untuk memberi jawaban. Untuk PR, Kawa membantu siswa memahami langkahnya dulu, tidak langsung memberi jawaban akhir.
 
-## Untuk siapa
+## Untuk siapa?
 
-Kawa.Ai dibuat untuk siswa penyandang disabilitas atau yang punya kendala bahasa, dan tertinggal karena metode belajar di kelas sama untuk semua siswa, sehingga mereka sulit mengikuti pelajaran.
+Kawa.Ai dibuat untuk siswa dan juga bisa untuk siswa penyandang disabilitas atau yang punya kendala bahasa, dan tertinggal karena metode belajar beragam yang membuat mereka sulit mengikuti pelajaran.
 
 Kalau seorang siswa ketinggalan materi di kelas, dia bisa mengejarnya sendiri dengan Kawa:
 
-- **Jawaban sesuai kebutuhannya.** Siswa memilih sendiri jawaban AI yang cocok, misalnya singkat, sabar dengan banyak contoh, atau santai. Karakter ini bisa diganti kapan saja.
+- **Karakter sesuai kebutuhannya.** Siswa memilih sendiri karakter AI yang cocok, misalnya singkat, sabar dengan banyak contoh, atau santai. Karakter ini bisa diganti kapan saja.
 - **Materi sendiri.** Siswa bisa upload materi atau buku pelajaran, lalu bertanya tentang isinya. Jadi yang dipelajari sama dengan yang diajarkan di kelas.
-- **Gambar untuk rumus.** Siswa yang kesulitan mengetik bisa menulis rumus atau soal dengan tangan di fitur Gambar, lalu bertanya cara menyelesaikannya. Kawa menjelaskan langkahnya satu per satu.
+- **Gambar/Menulis.** Siswa yang kesulitan mengetik bisa menulis rumus atau soal dengan tangan di fitur Gambar, lalu bertanya cara menyelesaikannya. Kawa menjelaskan langkahnya satu per satu.
 - **Tampilan yang nyaman.** Tema aplikasi bisa disesuaikan (font, warna, jarak teks, animasi), jadi siswa tidak capek mata atau terganggu saat belajar.
 
 ---
