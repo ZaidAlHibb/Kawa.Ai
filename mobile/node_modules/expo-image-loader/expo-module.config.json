@@ -1,0 +1,12 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "services": ["expo.modules.imageloader.ImageLoaderService"],
+    "publication": {
+      "groupId": "host.exp.exponent",
+      "artifactId": "expo.modules.imageloader",
+      "version": "57.0.1",
+      "repository": "local-maven-repo"
+    }
+  }
+}

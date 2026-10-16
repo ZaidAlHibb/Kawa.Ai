@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TouchableOpacity, ActivityIndicator, useWindowDimensions, AccessibilityInfo, Platform, Modal, Pressable } from 'react-native';
+import { View, Text, TouchableOpacity, ActivityIndicator, useWindowDimensions, AccessibilityInfo, Platform, Modal, Pressable, KeyboardAvoidingView } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StoreProvider, useStore } from './src/store';
@@ -81,7 +81,7 @@ function Root() {
           {!wide && <TouchableOpacity accessibilityRole="button" accessibilityLabel="Buka riwayat" accessibilityState={{ expanded: menuOpen }} onPress={() => setMenuOpen(true)} style={{ width: 44, height: 44, alignItems: 'center', justifyContent: 'center' }}><Icon name="menu" color={th.primary} /></TouchableOpacity>}
           {wide ? <Text accessibilityRole="header" style={T(th, { fontWeight: '700' })}>{TABS.find(t => t.key === tab).label}</Text> : <Brand th={th} size={24} />}
         </View>
-        <View style={{ flex: 1, width: '100%', maxWidth: tab === 'draw' ? 1100 : 920, alignSelf: 'center', minHeight: 0 }}><Active sidebarRequest={sidebarRequest} onSidebarHandled={() => setSidebarRequest(null)} /></View>
+        <KeyboardAvoidingView behavior={Platform.OS === 'web' ? undefined : 'padding'} style={{ flex: 1, width: '100%', maxWidth: tab === 'draw' ? 1100 : 920, alignSelf: 'center', minHeight: 0 }}><Active sidebarRequest={sidebarRequest} onSidebarHandled={() => setSidebarRequest(null)} /></KeyboardAvoidingView>
         {nav}
       </View>
       {!wide && <Modal visible={menuOpen} transparent animationType={th.anim ? 'fade' : 'none'} onRequestClose={() => setMenuOpen(false)}>

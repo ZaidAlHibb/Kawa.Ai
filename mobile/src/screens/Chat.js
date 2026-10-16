@@ -1,7 +1,7 @@
 import VoiceButton from '../components/VoiceButton';
 import Icon from '../components/Icon';
 import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, FlatList, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator, Modal, Pressable, Image, ScrollView } from 'react-native';
+import { View, Text, FlatList, TextInput, TouchableOpacity, Platform, ActivityIndicator, Modal, Pressable, Image, ScrollView } from 'react-native';
 import { useStore } from '../store';
 import { getTheme, T } from '../theme';
 import { chatApi, styleKey } from '../api';
@@ -142,7 +142,7 @@ export default function Chat({ sidebarRequest, onSidebarHandled }) {
   const canSend = !busy && (text.trim() || attachment);
 
   return (
-    <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined} keyboardVerticalOffset={80}>
+    <View style={{ flex: 1 }}>
       <Header th={th} title={room ? room.title : 'Obrolan baru'} onHistory={() => setShowList(true)} onNew={newRoom}
         right={<TouchableOpacity onPress={() => setStyleOpen(true)} accessibilityRole="button" accessibilityLabel="Atur gaya belajar" style={{ minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' }}><Icon name="settings" size={24} color={th.primary} /></TouchableOpacity>}
         sub={<>
@@ -224,6 +224,6 @@ Mau belajar apa hari ini?</Text>
         emptyText="Belum ada obrolan. Mulai dengan mengirim pesan."
         items={sorted.map((r) => ({ id: r.id, title: r.title, sub: `${r.messages.length} pesan · ${fmtDate(r.updatedAt)}` }))}
         activeId={state.activeRoomId} onOpen={openRoom} onNew={newRoom} onRename={renameRoom} onDelete={delRoom} />
-    </KeyboardAvoidingView>
+    </View>
   );
 }

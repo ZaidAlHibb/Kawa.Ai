@@ -7,7 +7,11 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Kawa.Ai memakai pengenalan suara untuk mengubah ucapanmu menjadi teks.",
+        "NSMicrophoneUsageDescription": "Kawa.Ai memakai mikrofon agar kamu bisa bertanya dengan suara."
+      }
     },
     "android": {
       "package": "id.pintar.edu",
@@ -16,7 +20,10 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -42,6 +49,11 @@
           ]
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5098294f-09e0-4494-892c-b6070e4ef76d"
+      }
+    }
   }
 }

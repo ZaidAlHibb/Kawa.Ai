@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "host.exp.exponent",
+    "module": "expo.modules.speech",
+    "version": "57.0.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "expo.modules.speech-57.0.3.aar",
+          "url": "expo.modules.speech-57.0.3.aar",
+          "size": 43758,
+          "sha512": "853b86de1e8019357290a1d569e8b5919fbbd6b6dfccf45b08c983d7e95ab5c5fb5698fe30fc671f916b64d52cfad6cab047c8df63c746c4fba0340100ec1cbe",
+          "sha256": "c6cbc3f439c0c4ac165363c36322b2e057240cf2376a2f76115c91f34ebd2b84",
+          "sha1": "a3ca58a8ac97dadc56cab25ea2b123139b42b517",
+          "md5": "168afb9df1855b88678af57ac253e30f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "2.1.20"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "23.0.0"
+          }
+        },
+        {
+          "group": "io.github.lukmccall.pika",
+          "module": "pika-api",
+          "version": {
+            "requires": "0.3.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "expo.modules.speech-57.0.3.aar",
+          "url": "expo.modules.speech-57.0.3.aar",
+          "size": 43758,
+          "sha512": "853b86de1e8019357290a1d569e8b5919fbbd6b6dfccf45b08c983d7e95ab5c5fb5698fe30fc671f916b64d52cfad6cab047c8df63c746c4fba0340100ec1cbe",
+          "sha256": "c6cbc3f439c0c4ac165363c36322b2e057240cf2376a2f76115c91f34ebd2b84",
+          "sha1": "a3ca58a8ac97dadc56cab25ea2b123139b42b517",
+          "md5": "168afb9df1855b88678af57ac253e30f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "expo.modules.speech-57.0.3-sources.jar",
+          "url": "expo.modules.speech-57.0.3-sources.jar",
+          "size": 4648,
+          "sha512": "2874a184421772879d9060d323a8552103b6c842a2fe7736c287caee644aacbc2e9bcd47ac6ee65f6847a5499f1d94644c9654cff56762ae4e60f34d787edac8",
+          "sha256": "f0a26cf2d819466510f2bb73c98e6cbfe664c49c4144546dbbd9e09420650ac6",
+          "sha1": "ff20c4135a6e1219ceacdeb5d285b1f884981c82",
+          "md5": "6c9171796e232f21f1f1fec6c729bd26"
+        }
+      ]
+    }
+  ]
+}

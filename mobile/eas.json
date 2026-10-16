@@ -4,7 +4,7 @@
     "preview": {
       "distribution": "internal",
       "android": { "buildType": "apk" },
-      "env": { "EXPO_PUBLIC_API_URL": "https://GANTI-DENGAN-URL-SERVER-KAMU" }
+      "env": { "EXPO_PUBLIC_API_URL": "https://kawaai-production.up.railway.app/" }
     }
   }
 }

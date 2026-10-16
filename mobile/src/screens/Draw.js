@@ -1,7 +1,7 @@
 import VoiceButton from '../components/VoiceButton';
 import Icon from '../components/Icon';
 import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, KeyboardAvoidingView, Platform, ActivityIndicator, useWindowDimensions, PanResponder } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, Platform, ActivityIndicator, useWindowDimensions, PanResponder } from 'react-native';
 import { useStore } from '../store';
 import { getTheme, T } from '../theme';
 import { chatApi, styleKey } from '../api';
@@ -144,7 +144,7 @@ export default function Draw({ sidebarRequest, onSidebarHandled }) {
   const pill = [T(th, { size: th.size - 2 }), { backgroundColor: th.card, borderWidth: 1, borderColor: th.border, borderRadius: 20, paddingHorizontal: 12, paddingVertical: 6, marginRight: 8, marginBottom: 8, overflow: 'hidden' }];
 
   return (
-    <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined} keyboardVerticalOffset={80}>
+    <View style={{ flex: 1 }}>
       <Header th={th} title={room ? room.title : 'Gambar baru'} onHistory={() => setShowList(true)} onNew={newRoom}
         right={<TouchableOpacity onPress={() => setShowGallery(true)} accessibilityLabel="Galeri" accessibilityRole="button" style={{ minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' }}><Icon name="image" size={24} color={th.primary} /></TouchableOpacity>}
         sub={<Text style={T(th, { size: th.size - 3, color: th.sub })}> Gaya: {personaShort}</Text>} />
@@ -217,6 +217,6 @@ export default function Draw({ sidebarRequest, onSidebarHandled }) {
         items={sorted.map((r) => ({ id: r.id, title: r.title, sub: `${r.messages.length} pesan · ${fmtDate(r.updatedAt)}` }))}
         activeId={state.activeDrawRoomId} onOpen={openRoom} onNew={newRoom} onRename={renameRoom} onDelete={delRoom} />
       <Gallery th={th} visible={showGallery} onClose={() => setShowGallery(false)} />
-    </KeyboardAvoidingView>
+    </View>
   );
 }

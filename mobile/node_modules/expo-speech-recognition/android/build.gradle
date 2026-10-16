@@ -1,0 +1,31 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'expo.modules.speechrecognition'
+
+// Read version from package.json
+def packageJson = new groovy.json.JsonSlurper().parseText(file('../package.json').text)
+version = packageJson.version
+
+android {
+  namespace "expo.modules.speechrecognition"
+  defaultConfig {
+    versionCode 1
+    versionName packageJson.version
+  }
+  lintOptions {
+    abortOnError false
+  }
+  testOptions {
+    unitTests.all {
+      useJUnitPlatform()
+    }
+  }
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter:6.1.2'
+  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}

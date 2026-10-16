@@ -1,7 +1,7 @@
 import Brand from '../components/Brand';
 import VoiceButton from '../components/VoiceButton';
 import React, { useEffect, useState } from 'react';
-import { View, Text, ScrollView, TextInput, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, TextInput, ActivityIndicator, KeyboardAvoidingView, Platform } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useStore } from '../store';
 import { getTheme, T } from '../theme';
@@ -53,7 +53,7 @@ export default function Onboarding() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: th.bg }}>
-      <View style={{ width: '100%', maxWidth: 680, alignSelf: 'center', flex: 1 }}><View style={{ padding: 20 }}><Brand th={th} /></View><Text style={T(th, { color: th.sub, paddingHorizontal: 20 })}>Langkah {idx + 1} dari {STEPS.length}</Text>
+      <KeyboardAvoidingView behavior={Platform.OS === 'web' ? undefined : 'padding'} style={{ width: '100%', maxWidth: 680, alignSelf: 'center', flex: 1 }}><View style={{ padding: 20 }}><Brand th={th} /></View><Text style={T(th, { color: th.sub, paddingHorizontal: 20 })}>Langkah {idx + 1} dari {STEPS.length}</Text>
       <View style={{ height: 8, backgroundColor: th.border, margin: 16, borderRadius: 4 }}>
         <View style={{ height: 8, width: `${((idx + 1) / STEPS.length) * 100}%`, backgroundColor: th.primary, borderRadius: 4 }} />
       </View>
@@ -116,7 +116,7 @@ export default function Onboarding() {
           {idx > 0 ? <SmallLink th={th} title="Sebelumnya" onPress={() => go(STEPS[idx - 1])} /> : <View />}
           {step === 'persona' && <SmallLink th={th} title="Lewati" onPress={() => { setPersona(''); openFirstRoom(''); }} />}
         </View>
-      </ScrollView></View>
+      </ScrollView></KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
