@@ -21,7 +21,7 @@ Untuk SD sampai SMA/SMK, termasuk siswa dengan disleksia, ADHD, dan autisme.
 
 <div align="center">
 
-<img src="docs/apk-qr.png" alt="QR code unduh APK Kawa.Ai" width="220">
+<img src="apk-qr.png" alt="QR code unduh APK Kawa.Ai" width="220">
 
 *Scan pakai kamera HP untuk membuka halaman unduh APK*
 
