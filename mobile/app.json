@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Kawa.Ai",
+    "slug": "pintar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "id.pintar.edu",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Kawa.Ai memakai kamera agar kamu bisa memotret soal atau catatan.",
+          "photosPermission": "Kawa.Ai memakai galeri agar kamu bisa mengirim foto soal atau catatan."
+        }
+      ],
+      "expo-font",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Kawa.Ai memakai mikrofon agar kamu bisa bertanya dengan suara.",
+          "speechRecognitionPermission": "Kawa.Ai memakai pengenalan suara untuk mengubah ucapanmu menjadi teks.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
+        }
+      ]
+    ]
+  }
+}
