@@ -417,5 +417,8 @@ app.get('*', (req, res) => {
   res.status(503).send('Website belum dibangun. Jalankan "npm install" di folder server (atau "npm run build:web"), lalu muat ulang halaman ini.');
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, '0.0.0.0', () => console.log(`Kawa.Ai berjalan di http://localhost:${PORT} (website + API)`));
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, '0.0.0.0', () => console.log(`Kawa.Ai berjalan di http://localhost:${PORT} (website + API)`));
+}
+module.exports = app;
