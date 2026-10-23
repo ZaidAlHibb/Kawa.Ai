@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["public/**"], "maxDuration": 60 }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "index.js" }]
+}
