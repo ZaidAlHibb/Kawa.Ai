@@ -6,7 +6,7 @@
 Untuk SD sampai SMA/SMK, termasuk siswa dengan disleksia, ADHD, dan autisme.
 
 [![Website](https://img.shields.io/badge/Coba_Website-Live-0e9f6e?style=for-the-badge)](https://kawa-ai-server-swart.vercel.app)
-[![APK](https://img.shields.io/badge/Unduh-APK_Android-176B60?style=for-the-badge)](https://expo.dev/accounts/kawaai/projects/pintar/builds/381c4898-b5b8-49a6-b8ab-41fc33d7993b)
+[![APK](https://img.shields.io/badge/Unduh-APK_Android-176B60?style=for-the-badge)](https://expo.dev/accounts/kawaai/projects/pintar/builds/d407d907-3771-4306-af34-d96a43a593e8)
 
 </div>
 
@@ -17,7 +17,7 @@ Untuk SD sampai SMA/SMK, termasuk siswa dengan disleksia, ADHD, dan autisme.
 | Versi | Cara buka |
 |---|---|
 | Website | [kawa-ai-server-swart.vercel.app](https://kawa-ai-server-swart.vercel.app) |
-| Android (APK) | [Halaman unduh APK](https://expo.dev/accounts/kawaai/projects/pintar/builds/381c4898-b5b8-49a6-b8ab-41fc33d7993b) atau scan QR di bawah |
+| Android (APK) | [Halaman unduh APK](https://expo.dev/accounts/kawaai/projects/pintar/builds/d407d907-3771-4306-af34-d96a43a593e8) atau scan QR di bawah |
 
 <div align="center">
 
